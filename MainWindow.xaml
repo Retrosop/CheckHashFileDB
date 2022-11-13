@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Программа определения контрольной суммы файлов по алгоритму MD5 и SHA256" Height="450" Width="800">
     <Grid>
-        <Button  HorizontalAlignment="Left" Margin="696,10,0,0" VerticalAlignment="Top" Height="95" Width="81" Click="Button_Click">
+        <Button  HorizontalAlignment="Left" Margin="696,10,0,0" VerticalAlignment="Top" Height="54" Width="81" Click="Button_Click">
             <TextBlock x:Name="tb1"  TextAlignment="Center"> Рассчитать <LineBreak/> файл</TextBlock>
         </Button>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="82,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="597" Height="19"/>
@@ -27,7 +27,7 @@
         <Label x:Name="label2" Content="SHA256" HorizontalAlignment="Left" Margin="21,75,0,0" VerticalAlignment="Top" Width="61" Height="30"/>
         <Label Content="Файл" HorizontalAlignment="Left" Margin="21,11,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="81,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="598" Height="17"/>
-        <Button HorizontalAlignment="Left" Margin="696,163,0,0" VerticalAlignment="Top" Height="248" Width="81" Click="Button_Click_1">
+        <Button HorizontalAlignment="Left" Margin="696,163,0,0" VerticalAlignment="Top" Height="159" Width="81" Click="Button_Click_1">
             <TextBlock x:Name="tb2" TextAlignment="Center"> Рассчитать <LineBreak/> файлы</TextBlock>
         </Button>
         <Label Content="Каталог" HorizontalAlignment="Left" Margin="25,125,0,0" VerticalAlignment="Top"/>
@@ -40,10 +40,16 @@
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Typ}" Width="70">Расширение</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Md5hash}" Width="120">MD5</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Sha256hash}" Width="130">SHA256</GridViewColumn>
-                   
+
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button HorizontalAlignment="Left" Margin="696,75,0,0" VerticalAlignment="Top" Width="81" Height="50">
+            <TextBlock TextAlignment="Center"> Поиск файлов <LineBreak/> в БД</TextBlock>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="696,342,0,0" VerticalAlignment="Top" Width="81" Height="55">
+            <TextBlock TextAlignment="Center"> Поиск файлов <LineBreak/> в БД</TextBlock>
+        </Button>
 
     </Grid>
 </Window>
